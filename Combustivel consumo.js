@@ -1,12 +1,20 @@
 // Programa para calcular o valor de uma viagem de carro
 
-const precoCombustivel = 5.79;
+const precoEtanol = 5.79;
+const precoGasolina = 6.66;
+const combustivelTipo = 'Etanol';
 const kmPorLitro = 10;
 const distanciaEmKm = 100;
 
 const litrosConsumidos = distanciaEmKm/kmPorLitro;
-const valorGasto = litrosConsumidos * precoCombustivel;
-console.log(valorGasto);
+
+if(combustivelTipo === 'Etanol') {
+    const valorGasto = litrosConsumidos * precoEtanol;
+    console.log(valorGasto);
+} else{
+    const valorGasto = litrosConsumidos * precoGasolina;
+    console.log(valorGasto);
+}
 
 
 
